@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şəxsi Aşpaz Xidmətləri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Şəxsi Aşpaz Xidmətləri</h1>
+        <p>Müştərilər evdə yemək təcrübələri, xüsusi yemək hazırlamaq və ya pəhrizə uyğun yemək hazırlamaq üçün şəxsi aşpazları işə götürür.</p>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Xidmətlərimiz</h2>
+            <ul>
+                <li>Evdə fərdi yemək hazırlığı</li>
+                <li>Xüsusi tədbirlər üçün menyu və aşpaz</li>
+                <li>Pəhrizə uyğun yeməklərin hazırlanması</li>
+                <li>Qonaqlar üçün eksklüziv şam yeməyi</li>
+                <li>Uşaqlar və ailələr üçün sağlam menyular</li>
+            </ul>
+        </section>
+        <section class="form-section">
+            <h2>Əlaqə Formu</h2>
+            <form id="chefForm">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Xidmət növü:</label>
+                <select id="service" name="service" required>
+                    <option value="">Seçin</option>
+                    <option value="evdə yemək">Evdə yemək təcrübəsi</option>
+                    <option value="xüsusi yemək">Xüsusi yemək hazırlamaq</option>
+                    <option value="pəhriz">Pəhrizə uyğun yemək</option>
+                </select>
+
+                <label for="message">Əlavə qeydlər:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Göndər</button>
+            </form>
+            <div id="formResult"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Şəxsi Aşpaz Xidmətləri</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
